@@ -4,7 +4,7 @@ title: About Dixyll
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with ⠙<sup>*</sup> by <a href="http://github.io/joshfindit">Findit</a>.
+This Jekyll theme was crafted with ⠙<sup>*</sup> by <a href="http://github.io/joshfindit">Findit</a> and based on [Pixyll](https://github.com/johnotander/pixyll) by John Otander.
 
 Checkout the [Github repository](https://github.com/joshfindit/dixyll) to download it,
 request a feature, report a bug, or contribute. It's free, and open source
@@ -12,7 +12,7 @@ request a feature, report a bug, or contribute. It's free, and open source
 
 Thanks to the following:
 
-* [Github repository](https://github.com/johnotander/pixyll)
+* [Pixyll!](https://github.com/johnotander/pixyll)
 * [BASSCSS](http://basscss.com)
 * [Jekyll](http://jekyllrb.com)
 * [Refills](http://refills.bourbon.io/)
