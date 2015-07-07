@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        {% if site.show_post_date %}
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        {% elsif post.sequence %}
+          {% comment %}
+            //post.sequence calls "sequence: " from the post's frontmatter. This is entirely optional, and allows for a type of post ID to mark the sequence of posts without using the date
+          {% endcomment %}
+          <p class="post-meta">#{{ post.sequence }}</p>
+        {% else %}
+          <p class="post-meta">⠙</p>
+        {% endif %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <p class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include pagination.html %}
+</div>
