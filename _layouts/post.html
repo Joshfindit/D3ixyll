@@ -68,3 +68,11 @@ layout: default
     </div>
   {% endfor %}
 {% endif %}
+{% assign post_index = 1 %}
+{% for post in site.posts reversed %}
+    {% if post.url == page.url %}
+        Post {{ post_index }} of {{ site.posts | size }}
+    {% else %}
+        {% assign post_index = post_index | plus: 1 %}
+    {% endif %}
+{% endfor %}

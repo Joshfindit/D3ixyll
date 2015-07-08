@@ -13,6 +13,7 @@ google_analytics:
 animated:           false
 show_related_posts: false
 show_post_footers:  false
+numbered_posts:     true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
